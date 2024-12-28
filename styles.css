@@ -1,0 +1,71 @@
+/* static/styles.css */
+
+/* Full-page background image */
+body {
+    background-image: url("/static/background.jpg"); /* Static reference to background image */
+    background-size: cover;     /* Make sure the background covers the entire page */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    margin: 0;
+    color: white; /* Make text white for readability against background */
+    font-family: 'Arial', sans-serif;
+}
+
+/* Style the container */
+.container {
+    padding: 20px;
+    max-width: 800px; /* Expanded width to accommodate longer text */
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* Larger title text with color */
+h2 {
+    font-size: 2.5rem; /* Larger font size for the title */
+    color: #ffcc00; /* Bright yellow color for the title */
+    line-height: 1.2; /* Reduce line spacing for multi-line title */
+    margin-bottom: 40px;
+}
+
+/* Style for the prediction form */
+textarea {
+    font-size: 16px;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.5); /* Slightly transparent background for textarea */
+    color: black;
+    width: 100%; /* Ensure textarea spans full width */
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+    margin-bottom: 15px; /* Space between textarea and button */
+}
+
+/* Button style */
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px; /* Adjust padding for a more compact button */
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: auto; /* Adjust width to fit content */
+    display: inline-block; /* Center align button */
+    margin: 0 auto; /* Center button horizontally */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Style the prediction result */
+#result {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #ffffff;
+}
